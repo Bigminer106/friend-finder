@@ -17,23 +17,18 @@ module.exports = friendCheck = () => {
   var result1 = [];
   var result2 = [];
   var difference = [];
+  
   for (let i = 0; i < personArray[0].scores.length; i++) {
-    result1.push(Math.abs(personArray[0].scores[i]));
+    var element = personArray[0].scores[i];
+    result1.push(element);
   };
 
-  for (let j = 0; j < personArray[1].scores.length; j++) {
-    result2.push(Math.abs(personArray[1].scores[j]));
+  for (let i = 0; i < personArray[1].scores.length; i++) {
+    element = personArray[1].scores[i];
+    result2.push(element);
   };
 
-  for (let k = 0; k < result1.length; k++) {
-    difference.push(Math.abs(result1[k] - result2[k]));
-  }
-
-  for (let i = 0; i < difference.length; i++) {
-    if (difference[i] <= 2) {
-      
-    } else {
-      // Show that there's no match
-    };
-  }
+  for (let i = 0; i < result1.length; i++) {
+    difference.push(Math.abs(result1[i] - result2[i]));
+  };
 }
