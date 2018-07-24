@@ -2,16 +2,6 @@
 
 var friendArray = [
   {
-    name: 'Adam',
-    photo: 'https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fnews.sagacom.com%2Fwp-content%2Fblogs.dir%2F3%2Ffiles%2F2014%2F03%2Fwenn5509084.jpg&f=1',
-    scores: [5, 5, 4, 3, 5, 4, 2, 4, 5, 3]
-  },
-  {
-    name: 'Sarah',
-    photo: 'https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fimages1.fanpop.com%2Fimages%2Fphotos%2F1500000%2FSarah-Chalke-sarah-chalke-1570860-1280-1024.jpg&f=1',
-    scores: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
-  },
-  {
     name: 'Barry',
     photo: 'https://images.duckduckgo.com/iu/?u=https%3A%2F%2F68.media.tumblr.com%2F0fa24d60f799d2d2e3a60abae6c0949d%2Ftumblr_npkngr0PGU1tgh6zro1_400.png&f=1',
     scores: [4, 2, 5, 3, 4, 3, 2, 4, 3, 5]

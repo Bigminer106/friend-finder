@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/Bigminer106/friend-finder/issues"
   },
-  "homepage": "https://git.heroku.com/friends-arrowverse.git",
+  "homepage": "https://github.com/Bigminer106/friend-finder#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
