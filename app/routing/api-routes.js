@@ -20,16 +20,14 @@ module.exports = app => {
 	// Then the server saves the data to the tableData array)
 	// ---------------------------------------------------------------------------
 
-    $.ajax('/api/friends',
-    {
-        data: JSON.stringify({data}),
-        contentType: 'application/json',
-        type: 'POST'
-    });
+	app.post('/api/friends', (req, res) => {
 
-    if (friends.length < 1) {
+	  var newUser = req.body;
+      var differences = [];
+
+      if (friends.length < 1) {
         console.log("unable to do calculation; not enough users");
-    } else {
+      } else {
         compareFriends(friends, newUser, differences);
         var lowest = differences[0];
 
@@ -41,9 +39,11 @@ module.exports = app => {
 
         var bestMatch = differences.indexOf(lowest);
         res.send(friends[bestMatch]);
-    };
+      };
 
-    friends.push(newUser);
+      friends.push(newUser);
+	});
+
 
 	var compareFriends = (friends, newUser, differences) => {
     var curUserIndex = 0;
